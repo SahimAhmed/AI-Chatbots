@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AI Chatbots</title>
+	<link rel="stylesheet" type="text/css" href="AhmedSFinalProject.css">
+	<style type="text/css">
+		img{
+			height: 350px;
+			width: 220px;
+		}
+		td{
+			padding: 10px 15px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>More About AI Chatbots</h1>
+	<table class="full">
+	<tr>
+		<td><a rel="noopener" href="AhmedSFinalProjectHome.html">Home Page</a></td>
+		<td>&#160;&#160;</td>
+		<td><a rel="noopener" href="AhmedSFinalProjectGallery.html">Examples</a></td>
+		<td>&#160;&#160;</td>
+		<td><a rel="noopener" href="AhmedSFinalProjectFAQ.html">FAQ Page</a></td>
+		<td><a rel="noopener" href="AhmedSFinalProjectForm.html">Form Page</a></td>
+	</tr>
+</table>
+<script type="text/javascript">
+	
+	var fName = prompt("What's your name?", "Sahim");
+	var favColor = prompt("What's your favoirte color?", "black");
+
+	document.write("<h2>Hi "+fName+" refresh the page to see different AI Chatbots!</h2>");
+	document.write("<h6>P.S "+favColor+" is my favorite color also.</h6>")
+	
+	function whatDecade(yearSelected)
+	{
+
+		if (yearSelected >= 2023) 
+		{
+			document.write("<tr><td>Bing AI Chat</td><td>February 7, 2023</td><td><img src= 'https://blogs.microsoft.com/wp-content/uploads/prod/2023/02/1920x1080-Hero.png'</td><td>Bing AI Chat is part of thes earch engine Bing and was developed by Microsoft. Due to the fact that it is connected to the search engine Bing, you are able to plan trips and other things you could do on Bing.</td></tr>")
+			document.write("<tr><td>Bard</td><td>March 21, 2023</td><td><img src= 'https://images.newscientist.com/wp-content/uploads/2023/03/21183855/SEI_149177734.jpg'</td><td>Bard AI chat was created in order to have dynamic ocmversations in order to repsond to queries. This chatbot is good in content generation which makes it good for writers, markers, and content creators.</td></tr>")
+		}
+		else if(yearSelected >= 2022)
+		{
+			document.write("<tr><td>ChatGPT</td><td>November 30, 2022</td><td><img src= 'https://seotoolsgroupbuy.com/wp-content/uploads/2023/08/chat-gpt-group-buy.jpg'</td><td>This is the most prominent chatbot in today's time and it is a natural language processing tool which allows you to have human ike conversations. Responds to all questions and concerns with a response or solution as long as it knowledge base is up to date.</td></tr>")
+			document.write("<tr><td>YouChat</td><td>December 23, 2022</td><td><img src= 'https://about.you.com/wp-content/uploads/2023/02/YouChat-2.0-logo.png'</td><td>Like most other AI chatbots, it porvides you with information and performs commands that are requested by the user, however this chatbot is constantly learning from huge amounts of information o it tends to get answers wrong.</td></tr>")
+		}
+		else if(yearSelected >= 2021)
+		{
+			document.write("<tr><td>JasperChat</td><td>January 2021</td><td><img src= 'https://og.jasper.ai/Jasper%20Chat.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fs3-us-east-2.amazonaws.com%2Fjarvis-public-cdn%2Fms%2Fjasper-word-mark-on-white.svg'</td><td>This AI is a copywriting tool which means that you quickly generate high-quality copy for your blog posts, Facebook ads, emails, websites, and more.</td></tr>")
+		}
+		else if(yearSelected >= 2016)
+		{
+			document.write("<tr><td>Google Assistant</td><td>May 18, 2016</td><td><img src= 'https://www.airtouch.net.au/wp-content/uploads/2022/09/google-assistant-app-and-speaker.webp'</td><td>This falls under as a conversational ai chatbot which was created by Google and it acts as your own personal <em>assistant.</em></td></tr>")
+		}
+		else if(yearSelected >= 2014)
+		{
+			document.write("<tr><td>Alexa</td><td>October 6, 2014</td><td><img src= 'https://hips.hearstapps.com/hmg-prod/images/smart-home-speakers-amazon-echo-6-1676495521.jpg?crop=0.637xw:0.956xh;0.190xw,0.00259xh&resize=980:*'</td><td>Alexa is a conversational AI chatbot made by everyone's favorite application <strong>Amazon.</strong>Alexa serves a similar purpose to the Google Assistant as they both perform actions that is voice activated, however cannot visuallu porvide you with what you are looking for.</td></tr>")
+		}
+		else if(yearSelected >= 2013)
+		{
+			document.write("<tr><td>IBM Watson Assistant</td><td>November 2013</td><td><img src= 'https://www.royalcyber.com/blog/wp-content/uploads/2018/07/IBM-Watson-Assistant-blog-banner.jpg'</td><td>The IBM Wtson Assistant is a market leading and growing AI platform which was deisgned to help with customer service problems to serve as a live chatbot.</td></tr>")
+		}
+		else if(yearSelected >= 2011)
+		{
+			document.write("<tr><td>Siri</td><td>October 4, 2011</td><td><img src= 'https://eshop.macsales.com/blog/wp-content/uploads/2023/07/Hey-Siri-Ventura-Sonoma.png'</td><td>The most notable chatbot which many people don't even realize is classified as a chatbot is our beloved <strong><em>Siri.</em></strong>As you may know Siri is a built in AI for Apple phones and can perform any activity you would usually do by using your fingers on your phone with voice recognition. It also provides with the best possible answers to your questions by searching on the world wide web and showing you various reuslts with it.</td></tr>")
+		}
+	}
+
+	function chatBot()
+	{
+	var max = 3;
+	document.write("<table border= '1'><tr><th class= 'color'>Name</th><th class= 'color'>Year Created</th><th class= 'color'>AI Chatbot</th><th class= 'color'>Description</th></tr>");
+	for (i=0;i<max;i++)
+	{
+	ranYear = Math.floor(Math.random()*14+2010);
+	whatDecade(ranYear);
+	}
+	}
+
+	chatBot();
+	
+
+</script>
+</body>
+</html>

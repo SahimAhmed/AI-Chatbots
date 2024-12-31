@@ -1,0 +1,56 @@
+body{
+	font-size: 24pt;
+	text-align: center;
+	background-color: lightcyan;
+}
+
+.full{
+	margin: 10px;
+	border: 1px black double;
+	text-align: center;
+}
+
+.full2{
+	background-color: white;
+	font-size: 18pt;
+}
+
+table{
+	background-color: lightsteelblue;
+	width: 95%;
+	font-size: 32pt
+}
+
+h1{
+	background-color: white;
+	text-align: center;
+	vertical-align: middle;
+	padding-left: auto;
+	padding-right: auto;
+	color: lightseagreen;
+	font-style: italic;
+}
+
+.submit{
+	text-align: center;
+}
+
+hr{
+	background-color: black;
+	height: 3px;
+}
+
+.color{
+		background-color: white;
+}
+
+.color1{
+	background-color: powderblue;
+}
+
+.color2{
+	background-color: aqua;
+}
+.color3{
+	background-color: aquamarine;
+}
